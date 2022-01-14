@@ -1,8 +1,14 @@
 import React from "react";
+import Carrito from "./CartWidget";
+
+
+
 
 export default function NavBar() {
     return(
-        <>
+       
+        <div class="container-bg">
+
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="a">LUFFE VELAS</a>
@@ -23,10 +29,12 @@ export default function NavBar() {
                             <li class="nav-item">
                             <a class="nav-link" href="a">Contacto</a>
                             </li>
+                            <Carrito />
                         </ul>
                     </div>
                 </div>
             </nav>
-        </>
+        </div>
+        
     )
 }
